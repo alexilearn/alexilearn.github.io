@@ -11,7 +11,7 @@ body.dark-mode {
     --body-text-color: #b1b1b1;
     --stroke-color: #888888;
     --accent-color: #2da15f;
-    --light-accent-color: #2cc36e;
+    --light-accent-color: #2ee07b;
 }
 
 body.light-mode {
@@ -23,5 +23,23 @@ body {
 }
 
 p {
+    font-size: 18px;
+    line-height: 26px;
     color: var(--body-text-color);
+}
+
+h1 {
+    color: var(--header-text-color);
+    font-size: 56px;
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(
+        0deg,
+        var(--accent-color),
+        var(--light-accent-color)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

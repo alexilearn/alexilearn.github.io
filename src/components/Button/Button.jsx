@@ -9,7 +9,9 @@ export default function Button({
 }) {
     return (
         <button className={`button ${type}`} onClick={onClick}>
-            {iconAlignment == 'left' && <img src={iconSrc} width={20} />}
+            {iconAlignment == 'left' && iconSrc && (
+                <img src={iconSrc} width={20} />
+            )}
             {text}
             {iconAlignment == 'right' && <img src={iconSrc} width={20} />}
         </button>
