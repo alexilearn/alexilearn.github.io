@@ -1,0 +1,10 @@
+.nav-button {
+    color: var(--header-text-color);
+    text-decoration: none;
+    transition-duration: 0.1s;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    color: var(--accent-color);
+}

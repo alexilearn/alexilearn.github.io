@@ -2,15 +2,16 @@ import './Button.css';
 
 export default function Button({
     text,
-    icon,
-    iconAlignment,
+    onClick,
+    iconSrc,
+    iconAlignment = 'left',
     type = 'outline',
 }) {
     return (
-        <button className={`button ${type}`}>
-            {iconAlignment == 'left' && icon}
+        <button className={`button ${type}`} onClick={onClick}>
+            {iconAlignment == 'left' && <img src={iconSrc} width={20} />}
             {text}
-            {iconAlignment == 'right' && icon}
+            {iconAlignment == 'right' && <img src={iconSrc} width={20} />}
         </button>
     );
 }

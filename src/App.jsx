@@ -1,15 +1,11 @@
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
 import Button from './components/Button/Button';
-import ButtonGroup from './components/ButtonGroup/ButtonGroup';
 
 export default function App() {
     return (
-        <div className="app dark-mode">
-            <ButtonGroup direction="vertical">
-                <Button text="Button" />
-                <Button text="Button" />
-                <Button text="Button" />
-            </ButtonGroup>
+        <div>
+            <Navbar />
         </div>
     );
 }

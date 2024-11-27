@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
 body.dark-mode {
     --background-color: #030507;
     --card-color: #111418;
@@ -14,4 +20,8 @@ body.light-mode {
 
 body {
     background-color: var(--background-color);
+}
+
+p {
+    color: var(--body-text-color);
 }
