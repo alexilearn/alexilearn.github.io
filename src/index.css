@@ -1,0 +1,17 @@
+body.dark-mode {
+    --background-color: #030507;
+    --card-color: #111418;
+    --header-text-color: #ffffff;
+    --body-text-color: #b1b1b1;
+    --stroke-color: #888888;
+    --accent-color: #2da15f;
+    --light-accent-color: #2cc36e;
+}
+
+body.light-mode {
+    --background-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+}
