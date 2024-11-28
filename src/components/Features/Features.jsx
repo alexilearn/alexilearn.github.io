@@ -71,7 +71,7 @@ export default function Features() {
                     <p className="description">
                         Ask your assistant any question you have about emotions
                         and receive a{' '}
-                        <strong>detailed and personalized answer</strong> that
+                        <strong>detailed and personalized answer</strong> that{' '}
                         <strong>deepens your understanding of emotions</strong>,
                         body language, sensations, descriptions, causes,
                         effects, etc.

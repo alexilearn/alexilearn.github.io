@@ -1,0 +1,23 @@
+.research {
+    display: flex;
+    padding: 140px;
+    gap: 80px;
+}
+
+.research .title {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1030px) {
+    .research {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 850px) {
+    .research {
+        padding-top: 120px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

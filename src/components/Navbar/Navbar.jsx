@@ -23,12 +23,42 @@ export default function Navbar() {
                 <img src={menuIcon} alt="Menu icon" />
             </button>
             <div className={`navigation-container ${menuVisible && 'open'}`}>
-                <NavButton text="Testimonials" href="#testimonials" />
-                <NavButton text="Features" href="#features" />
-                <NavButton text="Research" href="#research" />
-                <NavButton text="FAQs" href="#faq" />
-                <NavButton text="Support us" href="#support-us" />
-                <Button text="Download" type="accent" iconSrc={downloadIcon} />
+                <NavButton
+                    text="Testimonials"
+                    href="#testimonials"
+                    onClick={() => setMenuVisible(false)}
+                />
+                <NavButton
+                    text="Features"
+                    href="#features"
+                    onClick={() => setMenuVisible(false)}
+                />
+                <NavButton
+                    text="Research"
+                    href="#research"
+                    onClick={() => setMenuVisible(false)}
+                />
+                <NavButton
+                    text="FAQs"
+                    href="#faq"
+                    onClick={() => setMenuVisible(false)}
+                />
+                <NavButton
+                    text="Support us"
+                    href="#support-us"
+                    onClick={() => setMenuVisible(false)}
+                />
+                <Button
+                    text="Download"
+                    type="accent"
+                    iconSrc={downloadIcon}
+                    onClick={() => {
+                        window.open(
+                            'https://play.google.com/store/apps/details?id=com.app.alexilearnapp'
+                        );
+                        setMenuVisible(false);
+                    }}
+                />
             </div>
         </div>
     );
