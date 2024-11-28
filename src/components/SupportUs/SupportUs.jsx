@@ -56,7 +56,7 @@ export default function SupportUs() {
                         <Button
                             text="I use iOS"
                             onClick={() => {
-                                // TODO: increment Firebase value by one (in Realtime Database with lessons)
+                                // TODO: Add to Firebase counter
                             }}
                         />
                     </Card>
@@ -74,7 +74,7 @@ export default function SupportUs() {
                             text="Write a lesson"
                             type="accent"
                             onClick={() => {
-                                // TODO: create lesson page
+                                window.open('/lesson-creator', '_blank');
                             }}
                             iconSrc={createIcon}
                             iconAlignment="right"

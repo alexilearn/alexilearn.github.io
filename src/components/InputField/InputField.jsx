@@ -4,6 +4,7 @@ export default function InputField({
     name,
     value,
     setValue,
+    onChange,
     placeholder,
     multiline,
     error,
@@ -15,14 +16,17 @@ export default function InputField({
             name={name}
             value={value}
             onChange={(e) => {
-                setValue((prevValue) => ({
-                    ...prevValue,
-                    [name]: e.target.value,
-                }));
-                setFormErrors((prevFormErrors) => ({
-                    ...prevFormErrors,
-                    [name]: false,
-                }));
+                onChange && onChange(e);
+                setValue &&
+                    setValue((prevValue) => ({
+                        ...prevValue,
+                        [name]: e.target.value,
+                    }));
+                setFormErrors &&
+                    setFormErrors((prevFormErrors) => ({
+                        ...prevFormErrors,
+                        [name]: false,
+                    }));
             }}
             placeholder={placeholder}
         ></textarea>
@@ -33,14 +37,17 @@ export default function InputField({
             type="text"
             value={value}
             onChange={(e) => {
-                setValue((prevValue) => ({
-                    ...prevValue,
-                    [name]: e.target.value,
-                }));
-                setFormErrors((prevFormErrors) => ({
-                    ...prevFormErrors,
-                    [name]: false,
-                }));
+                onChange && onChange(e);
+                setValue &&
+                    setValue((prevValue) => ({
+                        ...prevValue,
+                        [name]: e.target.value,
+                    }));
+                setFormErrors &&
+                    setFormErrors((prevFormErrors) => ({
+                        ...prevFormErrors,
+                        [name]: false,
+                    }));
             }}
             placeholder={placeholder}
         />
