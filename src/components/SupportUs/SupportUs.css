@@ -42,3 +42,9 @@
         padding: 20px;
     }
 }
+
+@media (max-width: 900px) {
+    .support-us .card-container {
+        flex-direction: column;
+    }
+}
