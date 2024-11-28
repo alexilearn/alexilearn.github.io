@@ -81,3 +81,7 @@ h4 {
 ::-webkit-scrollbar-thumb:hover {
     background: #171b20;
 }
+
+a {
+    color: var(--body-text-color);
+}

@@ -6,7 +6,7 @@ import createIcon from '../../assets/create.svg';
 
 export default function SupportUs() {
     return (
-        <div className="support-us">
+        <div className="support-us" id="support-us">
             <h2>Support Us</h2>
             <div className="card-container">
                 <div>

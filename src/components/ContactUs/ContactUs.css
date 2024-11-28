@@ -1,0 +1,42 @@
+.contact-us {
+    display: flex;
+    padding: 140px;
+    gap: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form textarea,
+.contact-form input {
+    width: calc(100% - 28px);
+}
+
+.contact-us .name-input {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-us > div > p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-form .button {
+    width: fit-content;
+}
+
+@media (max-width: 910px) {
+    .contact-us {
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+
+@media (max-width: 650px) {
+    .contact-us {
+        padding: 40px;
+    }
+}

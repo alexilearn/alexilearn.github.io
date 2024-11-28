@@ -18,7 +18,7 @@
 
 .navbar .navigation-container {
     display: flex;
-    gap: 10px;
+    gap: 16px;
     align-items: center;
 }
 
@@ -38,18 +38,14 @@
     height: 30px;
 }
 
-@media (max-width: 830px) {
+@media (max-width: 970px) {
     .navbar {
         transition: padding-bottom 1s;
     }
 
     .navbar.open {
-        padding-bottom: 241px;
+        padding-bottom: 271px;
     }
-    /* 
-    .navbar .navigation-container {
-        display: none;
-    } */
 
     .navbar .menu-icon {
         display: block;
@@ -58,6 +54,7 @@
     .navbar .navigation-container {
         display: flex;
         top: 100px;
+        gap: 10px;
         align-items: start;
         position: fixed;
         flex-direction: column;

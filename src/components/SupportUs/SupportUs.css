@@ -36,6 +36,7 @@
 @media (max-width: 1030px) {
     .support-us {
         padding: 40px;
+        padding-top: 120px;
     }
 
     .support-us .card-container .card {

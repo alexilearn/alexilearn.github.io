@@ -48,6 +48,11 @@ export default function Navbar() {
                     href="#support-us"
                     onClick={() => setMenuVisible(false)}
                 />
+                <NavButton
+                    text="Contact us"
+                    href="#contact-us"
+                    onClick={() => setMenuVisible(false)}
+                />
                 <Button
                     text="Download"
                     type="accent"

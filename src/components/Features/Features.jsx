@@ -6,12 +6,25 @@ import Glow from './Glow';
 
 export default function Features() {
     useEffect(() => {
-        const shadowElements = document.getElementsByClassName('shadow');
-        if (shadowElements.length > 0) {
-            for (let shadowElement of shadowElements) {
-                shadowElement.style.display = 'none';
+        const deletedElements = [
+            document.getElementsByClassName('shadow'),
+            document.getElementsByClassName('camera'),
+            document.getElementsByClassName('sensors'),
+            document.getElementsByClassName('more-sensors'),
+        ];
+        for (let element of deletedElements) {
+            if (element.length > 0) {
+                for (let i of element) {
+                    i.style.display = 'none';
+                }
             }
         }
+        // const shadowElements = document.getElementsByClassName('shadow');
+        // if (shadowElements.length > 0) {
+        //     for (let shadowElement of shadowElements) {
+        //         shadowElement.style.display = 'none';
+        //     }
+        // }
     }, []);
 
     return (
