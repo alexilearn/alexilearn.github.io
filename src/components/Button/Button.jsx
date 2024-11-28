@@ -6,6 +6,7 @@ export default function Button({
     iconSrc,
     iconAlignment = 'left',
     type = 'outline',
+    children,
 }) {
     return (
         <button className={`button ${type}`} onClick={onClick}>
@@ -13,6 +14,7 @@ export default function Button({
                 <img src={iconSrc} width={20} />
             )}
             {text}
+            {children}
             {iconAlignment == 'right' && <img src={iconSrc} width={20} />}
         </button>
     );
