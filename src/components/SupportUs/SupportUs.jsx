@@ -3,6 +3,7 @@ import Card from '../Card/Card';
 import Button from '../Button/Button';
 import rightArrow from '../../assets/arrow-right.svg';
 import createIcon from '../../assets/create.svg';
+import { getValue, setValue } from '../../firebase';
 
 export default function SupportUs() {
     return (
@@ -55,8 +56,13 @@ export default function SupportUs() {
                         </p>
                         <Button
                             text="I use iOS"
-                            onClick={() => {
-                                // TODO: Add to Firebase counter
+                            onClick={async () => {
+                                const prevUsers = await getValue('/iosUsers');
+
+                                setValue(
+                                    prevUsers !== null ? prevUsers + 1 : 1,
+                                    '/iosUsers'
+                                );
                             }}
                         />
                     </Card>
