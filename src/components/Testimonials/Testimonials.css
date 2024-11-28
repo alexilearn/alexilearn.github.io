@@ -1,0 +1,43 @@
+.testimonials {
+    overflow-x: scroll;
+    padding-top: 100px;
+    margin-left: calc((100vw - 760px) / 2);
+    display: flex;
+    scrollbar-width: none;
+    max-width: 760px;
+}
+
+.testimonials::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-scroll {
+    display: flex;
+    gap: 20px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    margin-left: calc((100vw - 760px) / 2);
+    z-index: 2;
+    background: linear-gradient(
+        to left,
+        var(--background-color),
+        transparent,
+        var(--background-color)
+    );
+    pointer-events: none;
+    max-width: 760px;
+    width: 100vw;
+    height: 200px;
+}
+
+@media (max-width: 760px) {
+    .overlay {
+        left: 0;
+        width: 100vw;
+        margin-left: 0;
+        max-width: none;
+    }
+}

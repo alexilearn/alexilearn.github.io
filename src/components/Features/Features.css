@@ -1,0 +1,42 @@
+.features {
+    margin-top: 100px;
+}
+
+.feature {
+    display: flex;
+    gap: 100px;
+    padding: 140px;
+}
+
+.feature:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.feature .title {
+    margin-bottom: 20px;
+}
+
+.feature .description {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1040px) {
+    .feature {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .feature {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 830px) {
+    .feature:nth-child(even),
+    .feature {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
