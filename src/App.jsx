@@ -5,6 +5,7 @@ import Testimonials from './components/Testimonials/Testimonials';
 import Features from './components/Features/Features';
 import Research from './components/Research/Research';
 import FAQ from './components/FAQ/FAQ';
+import SupportUs from './components/SupportUs/SupportUs';
 
 export default function App() {
     return (
@@ -15,6 +16,7 @@ export default function App() {
             <Features />
             <Research />
             <FAQ />
+            <SupportUs />
         </div>
     );
 }

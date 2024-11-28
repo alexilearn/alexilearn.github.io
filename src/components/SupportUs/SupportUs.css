@@ -1,0 +1,44 @@
+.support-us {
+    padding: 140px;
+    padding-top: 120px;
+}
+
+.support-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.support-us .card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.support-us .card-container > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.support-us .card-container .card {
+    padding: 30px;
+}
+
+.support-us .card-container h4 {
+    margin-bottom: 18px;
+}
+
+.support-us .card-container .button {
+    margin-top: 40px;
+}
+
+@media (max-width: 1030px) {
+    .support-us {
+        padding: 40px;
+    }
+
+    .support-us .card-container .card {
+        padding: 20px;
+    }
+}
