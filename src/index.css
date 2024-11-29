@@ -73,13 +73,13 @@ h4 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--card-color);
+    background: #1f262d;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #171b20;
+    background: #272d34;
 }
 
 a {
