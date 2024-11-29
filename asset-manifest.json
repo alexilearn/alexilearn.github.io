@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.695b8e3c.css",
+    "main.js": "/static/js/main.a7b78eef.js",
+    "static/media/Glow.svg": "/static/media/Glow.8dc43d3e42d0f1380ab3d9020f6f733a.svg",
+    "static/media/practice_screenshot.png": "/static/media/practice_screenshot.818c4548c3acbb9bd837.png",
+    "static/media/store_screenshot.png": "/static/media/store_screenshot.69e9dafd6f5fc580e7fe.png",
+    "static/media/reflection_screenshot.png": "/static/media/reflection_screenshot.4ccbb362e3c068d8c005.png",
+    "static/media/event_discussion_screenshot.png": "/static/media/event_discussion_screenshot.b1bdba467ad236d7c648.png",
+    "static/media/question_screenshot.png": "/static/media/question_screenshot.cef00517f968b6ef6c0a.png",
+    "static/media/AlexiLearn Logo.svg": "/static/media/AlexiLearn Logo.b57d98f45a5706461593e13f1b26f775.svg",
+    "index.html": "/index.html",
+    "static/media/star.svg": "/static/media/star.c18c3a8c4fcb8c68f20045f9193ff6e9.svg",
+    "static/media/google-play-icon.svg": "/static/media/google-play-icon.34b70ffd5ff7bc7b31a9207240b03f38.svg",
+    "static/media/download-icon.svg": "/static/media/download-icon.9a4964b33ede14f1249136bfcd745cb8.svg",
+    "static/media/create.svg": "/static/media/create.d91398e08c291860b0e340d9216ec1d3.svg",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.4dc8d6168ef1828cfd66f460c50687af.svg",
+    "static/media/arrow-left.svg": "/static/media/arrow-left.b9a01a16952c78118c7778dbc918fe8a.svg",
+    "static/media/menu-icon.svg": "/static/media/menu-icon.764bce2a426d3a81ca520e421f37e679.svg",
+    "static/media/send.svg": "/static/media/send.b18319ac3bf6feee2fe4b0d80873b229.svg",
+    "static/media/plus.svg": "/static/media/plus.8d9259c8bd410691d6e7f2b856d87bf5.svg",
+    "static/media/minus.svg": "/static/media/minus.b73f029c0429cbecf8a61ba8db665092.svg",
+    "main.695b8e3c.css.map": "/static/css/main.695b8e3c.css.map",
+    "main.a7b78eef.js.map": "/static/js/main.a7b78eef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.695b8e3c.css",
+    "static/js/main.a7b78eef.js"
+  ]
+}
