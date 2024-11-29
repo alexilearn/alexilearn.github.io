@@ -80,7 +80,7 @@ export default function SupportUs() {
                             text="Write a lesson"
                             type="accent"
                             onClick={() => {
-                                window.open('/lesson-creator', '_blank');
+                                window.open('/#/lesson-creator', '_blank');
                             }}
                             iconSrc={createIcon}
                             iconAlignment="right"
