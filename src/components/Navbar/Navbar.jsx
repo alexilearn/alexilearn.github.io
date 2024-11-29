@@ -11,7 +11,13 @@ export default function Navbar() {
 
     return (
         <div className={`navbar ${menuVisible && 'open'}`}>
-            <a href="#home">
+            <a
+                onClick={() => {
+                    document
+                        .getElementById('home')
+                        ?.scrollIntoView({ scrollBehavior: 'smooth' });
+                }}
+            >
                 <img src={logo} alt="AlexiLearn logo" className="logo" />
             </a>
             <button
@@ -25,32 +31,32 @@ export default function Navbar() {
             <div className={`navigation-container ${menuVisible && 'open'}`}>
                 <NavButton
                     text="Testimonials"
-                    href="#testimonials"
+                    href="testimonials"
                     onClick={() => setMenuVisible(false)}
                 />
                 <NavButton
                     text="Features"
-                    href="#features"
+                    href="features"
                     onClick={() => setMenuVisible(false)}
                 />
                 <NavButton
                     text="Research"
-                    href="#research"
+                    href="research"
                     onClick={() => setMenuVisible(false)}
                 />
                 <NavButton
                     text="FAQs"
-                    href="#faq"
+                    href="faq"
                     onClick={() => setMenuVisible(false)}
                 />
                 <NavButton
                     text="Support us"
-                    href="#support-us"
+                    href="support-us"
                     onClick={() => setMenuVisible(false)}
                 />
                 <NavButton
                     text="Contact us"
-                    href="#contact-us"
+                    href="contact-us"
                     onClick={() => setMenuVisible(false)}
                 />
                 <Button

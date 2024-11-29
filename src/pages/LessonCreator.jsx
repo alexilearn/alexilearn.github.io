@@ -20,6 +20,10 @@ export default function LessonCreator() {
             lessons ? [...lessons, lessonData] : [lessonData],
             `lessons/${selectedEmotion}`
         );
+        setLessonData({
+            lesson_title: '',
+            pages: [],
+        });
     }
 
     function deletePage(pageIndex) {
@@ -39,13 +43,11 @@ export default function LessonCreator() {
             const pageToUpdate = { ...updatedPages[pageIndex] };
 
             if (field === 'interactive_activity.question') {
-                // Update the question field
                 pageToUpdate.interactive_activity = {
                     ...pageToUpdate.interactive_activity,
                     question: value,
                 };
             } else if (field === 'answers') {
-                // Update a specific answer
                 const updatedAnswers = [
                     ...pageToUpdate.interactive_activity.answers,
                 ];
@@ -58,12 +60,11 @@ export default function LessonCreator() {
                     answers: updatedAnswers,
                 };
             } else if (field === 'answers.correct') {
-                // Update the correct flag for answers
                 const updatedAnswers =
                     pageToUpdate.interactive_activity.answers.map(
                         (answer, idx) => ({
                             ...answer,
-                            correct: idx === answerIndex, // Set this answer as correct
+                            correct: idx === answerIndex,
                         })
                     );
                 pageToUpdate.interactive_activity = {
@@ -71,7 +72,6 @@ export default function LessonCreator() {
                     answers: updatedAnswers,
                 };
             } else {
-                // Update top-level fields
                 pageToUpdate[field] = value;
             }
 
