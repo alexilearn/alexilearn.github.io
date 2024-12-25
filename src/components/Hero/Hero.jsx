@@ -30,7 +30,7 @@ export default function Hero() {
                     text="View demo video"
                     onClick={() =>
                         window.open(
-                            'https://www.youtube.com/watch?v=HSWndRAga-c'
+                            'https://www.youtube.com/watch?v=jAQ472I9DGQ'
                         )
                     }
                 />

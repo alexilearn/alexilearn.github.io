@@ -8,6 +8,8 @@ import practiceScreenshot from '../../assets/practice_screenshot.png';
 import questionScreenshot from '../../assets/question_screenshot.png';
 import reflectionScreenshot from '../../assets/reflection_screenshot.png';
 import storeScreenshot from '../../assets/store_screenshot.png';
+import bodyMappingScreenshot from '../../assets/body_mapping_screenshot_cropped.png';
+import questionnaireScreenshot from '../../assets/alexithymia_questionnaire.png';
 
 export default function Features() {
     useEffect(() => {
@@ -133,7 +135,11 @@ export default function Features() {
                         width="352px"
                         height="693px"
                     >
-                        <img src={practiceScreenshot} width="100%" />
+                        <div
+                            style={{ height: '100%', backgroundColor: 'black' }}
+                        >
+                            <img src={practiceScreenshot} width="100%" />
+                        </div>
                     </DeviceFrameset>
                 </div>
             </div>
@@ -166,7 +172,11 @@ export default function Features() {
                         width="352px"
                         height="693px"
                     >
-                        <img src={questionScreenshot} width="100%" />
+                        <div
+                            style={{ height: '100%', backgroundColor: 'black' }}
+                        >
+                            <img src={questionScreenshot} width="100%" />
+                        </div>
                     </DeviceFrameset>
                 </div>
             </div>
@@ -189,7 +199,67 @@ export default function Features() {
                         width="352px"
                         height="693px"
                     >
-                        <img src={reflectionScreenshot} width="100%" />
+                        <div
+                            style={{ height: '100%', backgroundColor: 'black' }}
+                        >
+                            <img src={reflectionScreenshot} width="100%" />
+                        </div>
+                    </DeviceFrameset>
+                </div>
+            </div>
+
+            {/* Body mapping feature */}
+            <div className="feature">
+                <div className="info">
+                    <h3 className="title">Body mapping</h3>
+                    <p className="description">
+                        Understand your emotions by describing your sensations
+                        in various body parts and selecting from predictions of
+                        emotions. Discuss these emotions and the events that
+                        caused them with your AI Assistant
+                    </p>
+                </div>
+                <div>
+                    <Glow x={-40} y={300} rotation={-90} />
+                    <DeviceFrameset
+                        device="Galaxy Note 8"
+                        width="352px"
+                        height="693px"
+                    >
+                        <div
+                            style={{ height: '100%', backgroundColor: 'black' }}
+                        >
+                            <img src={bodyMappingScreenshot} width="100%" />
+                        </div>
+                    </DeviceFrameset>
+                </div>
+            </div>
+
+            {/* Alexithymia questionnaire feature */}
+            <div className="feature">
+                <div className="info">
+                    <h3 className="title">Alexithymia questionnaire</h3>
+                    <p className="description">
+                        <strong>Track your progress</strong> by{' '}
+                        <strong>measuring your level of alexithymia</strong>{' '}
+                        with the{' '}
+                        <strong>Perth Alexithymia Questionniare</strong>, a
+                        24-question survey that describes your ability in
+                        various aspects of alexithymia.
+                    </p>
+                </div>
+                <div>
+                    <Glow x={-20} y={-20} rotation={0} />
+                    <DeviceFrameset
+                        device="Galaxy Note 8"
+                        width="352px"
+                        height="693px"
+                    >
+                        <div
+                            style={{ height: '100%', backgroundColor: 'black' }}
+                        >
+                            <img src={questionnaireScreenshot} width="100%" />
+                        </div>
                     </DeviceFrameset>
                 </div>
             </div>
@@ -206,13 +276,17 @@ export default function Features() {
                     </p>
                 </div>
                 <div>
-                    <Glow x={80} y={100} rotation={90} />
+                    <Glow x={100} y={500} rotation={-20} />
                     <DeviceFrameset
                         device="Galaxy Note 8"
                         width="352px"
                         height="693px"
                     >
-                        <img src={storeScreenshot} width="100%" />
+                        <div
+                            style={{ height: '100%', backgroundColor: 'black' }}
+                        >
+                            <img src={storeScreenshot} width="100%" />
+                        </div>
                     </DeviceFrameset>
                 </div>
             </div>

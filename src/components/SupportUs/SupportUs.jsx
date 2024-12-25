@@ -12,6 +12,7 @@ export default function SupportUs() {
             <div className="card-container">
                 <div>
                     <Card>
+                        {/* 5277|bipPtEt2O8n81o4idBdxBQdebdSOwefbOg6qC1lu */}
                         <h4>Donate</h4>
                         <p>
                             Help us keep AlexiLearn free and ad-free by
