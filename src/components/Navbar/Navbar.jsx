@@ -5,6 +5,7 @@ import Button from '../Button/Button';
 import logo from '../../assets/AlexiLearn Logo.svg';
 import downloadIcon from '../../assets/download-icon.svg';
 import menuIcon from '../../assets/menu-icon.svg';
+import discordLogo from '../../assets/discord-logo.svg';
 
 export default function Navbar() {
     const [menuVisible, setMenuVisible] = useState(false);
@@ -59,6 +60,13 @@ export default function Navbar() {
                     href="contact-us"
                     onClick={() => setMenuVisible(false)}
                 />
+                <a
+                    className="icon-button"
+                    href="https://discord.gg/BCqxF9RWCu"
+                    target="_blank"
+                >
+                    <img src={discordLogo} alt="Join our Discord" />
+                </a>
                 <Button
                     text="Download"
                     type="accent"

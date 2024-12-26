@@ -16,6 +16,21 @@
     width: 230px;
 }
 
+.navbar .icon-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition-duration: 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .icon-button:hover img {
+    filter: invert(46%) sepia(18%) saturate(3422%) hue-rotate(106deg)
+        brightness(101%) contrast(65%);
+}
+
 .navbar .navigation-container {
     display: flex;
     gap: 16px;
@@ -44,7 +59,7 @@
     }
 
     .navbar.open {
-        padding-bottom: 271px;
+        padding-bottom: 305px;
     }
 
     .navbar .menu-icon {
