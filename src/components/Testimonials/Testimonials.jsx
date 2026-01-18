@@ -20,14 +20,18 @@ export default function Testimonials() {
             <div className="horizontal-scroll">
                 <Card width="200px">
                     {starIcons}
-                    <p>"Simple and easy to use."</p>
-                </Card>
-                <Card width="200px">
-                    {starIcons}
                     <p>
                         "Nice feature of describing the situations and reasons
                         behind the facial expressions."
                     </p>
+                </Card>
+                <Card width="200px">
+                    {starIcons}
+                    <p>"It's a great App."</p>
+                </Card>
+                <Card width="200px">
+                    {starIcons}
+                    <p>"Simple and easy to use."</p>
                 </Card>
                 <Card width="200px">
                     {starIcons}
